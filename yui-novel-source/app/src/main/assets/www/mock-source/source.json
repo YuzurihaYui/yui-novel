@@ -1,0 +1,36 @@
+{
+  "bookSourceUrl": "./mock-source/",
+  "bookSourceName": "yui 示例书源",
+  "bookSourceGroup": "示例",
+  "bookSourceType": 0,
+  "bookSourceComment": "内置演示书源，只抓取本地的示例页面，用来验证 search / detail / toc / content 四个规则流程。",
+  "enabled": true,
+  "searchUrl": "search.html?q={{key}}&page={{page}}",
+  "ruleSearch": {
+    "bookList": "class.book-list@class.book-item",
+    "name": "class.book-name@text",
+    "author": "class.book-author@text",
+    "bookUrl": "href",
+    "coverUrl": "class.book-cover@src",
+    "intro": "class.book-intro@text",
+    "kind": "class.book-kind@text",
+    "lastChapter": "class.book-last@text"
+  },
+  "ruleBookInfo": {
+    "name": "class.book-name@text",
+    "author": "class.book-author@text",
+    "coverUrl": "class.book-cover@src",
+    "intro": "class.book-intro@text",
+    "kind": "class.book-kind@text",
+    "tocUrl": "class.toc-link@href",
+    "lastChapter": "class.book-last@text"
+  },
+  "ruleToc": {
+    "chapterList": "class.chapter-list@tag.a",
+    "chapterName": "text",
+    "chapterUrl": "href"
+  },
+  "ruleContent": {
+    "content": "id.content@html"
+  }
+}
