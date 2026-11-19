@@ -1,1 +1,0 @@
--keep class com.paperlantern.novels.MainActivity { *; }
